@@ -90,6 +90,7 @@ useEffect(() => {
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#hobbies">Beyond Coding</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -334,12 +335,12 @@ useEffect(() => {
     GitHub ↗
   </a>
 
-  <a
+  {/* <a
     href="#contact"
     className="secondary-button"
   >
     Live Demo ↗
-  </a>
+  </a> */}
 </div>
             </div>
           </div>
@@ -363,9 +364,16 @@ useEffect(() => {
     </div>
 
     <div className="project-buttons">
-      <button>GitHub ↗</button>
-      <button className="outline">Live Demo ↗</button>
+      <a
+        href="https://github.com/Pranamya-11/AI-Expense-Tracker"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="primary-button"
+      >
+        GitHub ↗
+      </a>
     </div>
+
   </div>
 </div>
 
@@ -386,9 +394,18 @@ useEffect(() => {
       <span>Android</span>
     </div>
 
+    
     <div className="project-buttons">
-      <button>GitHub ↗</button>
+      <a
+        href="https://github.com/Pranamya-11/PotholeRepo"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="primary-button"
+      >
+        GitHub ↗
+      </a>
     </div>
+
   </div>
 </div>
         </motion.div>
@@ -500,6 +517,55 @@ useEffect(() => {
 </div>
   </motion.div>
 </section>
+
+{/* Beyond Coding Section */}
+<section className="hobbies-section" id="hobbies">
+  <motion.div
+    className="section-container"
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.7 }}
+  >
+    <h2>Beyond Coding</h2>
+    <p className="hobbies-subtitle">
+      A little creativity beyond the world of technology.
+    </p>
+
+    <div className="hobbies-grid">
+      <motion.div
+        className="hobby-card"
+        whileHover={{ y: -8, scale: 1.03 }}
+        transition={{ duration: 0.25 }}
+      >
+        <span className="hobby-icon">🎶</span>
+        <h3>Flute</h3>
+        <p>Finding calm and expression through music.</p>
+      </motion.div>
+
+      <motion.div
+        className="hobby-card"
+        whileHover={{ y: -8, scale: 1.03 }}
+        transition={{ duration: 0.25 }}
+      >
+        <span className="hobby-icon">💃</span>
+        <h3>Bharatanatyam</h3>
+        <p>Exploring stories through classical dance.</p>
+      </motion.div>
+
+      <motion.div
+        className="hobby-card"
+        whileHover={{ y: -8, scale: 1.03 }}
+        transition={{ duration: 0.25 }}
+      >
+        <span className="hobby-icon">🎨</span>
+        <h3>Rangoli Art</h3>
+        <p>Expressing creativity through traditional art.</p>
+      </motion.div>
+    </div>
+  </motion.div>
+</section>
+
 {/* Contact Section */}
 <section id="contact" className="contact-section">
   <motion.div

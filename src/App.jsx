@@ -592,13 +592,14 @@ useEffect(() => {
     Email
   </a>
 
-  <a
-    href="https://www.linkedin.com/in/pranamya-prakash-rayakar-883483738"
-    target="_blank"
-    rel="noreferrer"
-  >
-    LinkedIn ↗
-  </a>
+  
+<a
+  href="https://www.linkedin.com/in/pranamya-prakash-rayakar-883487378/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  LinkedIn ↗
+</a>
 
   <a
     href="https://github.com/pranamya-11"
